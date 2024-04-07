@@ -1,4 +1,5 @@
 /* eslint-disable react/no-array-index-key */
+import Helmet from 'react-helmet';
 import { FC } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { Layout } from '@components/layout';
@@ -104,6 +105,18 @@ const HomePage: FC = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Daniela Huezo</title>
+        <meta
+          name="description"
+          content="I am a Software Engineer with experience in creating innovative software applications and solutions. I am committed to innovation and excellence."
+        />
+        <meta name="author" content="Daniela Huezo" />
+        <meta
+          name="keywords"
+          content="Software Engineer, Frontend Developer, Backend Developer, ReactJS, NodeJS, TypeScript, MongoDB, ExpressJS, GraphQL, NextJS, PostgreSQL, Tailwind, Git"
+        />
+      </Helmet>
       <div>
         <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
           Daniela Huezo
