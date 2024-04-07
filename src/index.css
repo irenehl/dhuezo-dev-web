@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Poppins:wght@100;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+}
+
+.grid-card {
+  @apply flex flex-col items-center justify-center rounded-xl border-2 border-secondary bg-black/70 p-4 font-semibold hover:border-secondary-accent hover:text-secondary-accent
+
+}
+.grid-card-inverted {
+  @apply flex flex-col items-center justify-center rounded-xl border-2 border-secondary-accent bg-secondary-accent/70 p-4 font-semibold hover:border-secondary hover:bg-secondary/70
+}
+
+.gradient-text {
+  background: radial-gradient(circle at 0% 0%, #701cf5, #c241bc, #eb404f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border: solid 4px transparent;
+  border-radius: 8px !important;
+  background-clip: padding-box;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
+  border-image: radial-gradient(circle at 0% 0%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  border-image-slice: 1;
+  cursor: default;
+}
+
+.gradient-border:hover {
+  animation: gradient-animation 2s infinite;
+}
+
+.with-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+@keyframes gradient-animation {
+  0%, 100% {
+    border-image: radial-gradient(circle at 0% 0%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  10% {
+    border-image: radial-gradient(circle at 10% 10%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  20% {
+    border-image: radial-gradient(circle at 20% 20%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  30% {
+    border-image: radial-gradient(circle at 30% 30%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  40% {
+    border-image: radial-gradient(circle at 40% 40%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  50% {
+    border-image: radial-gradient(circle at 50% 50%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  60% {
+    border-image: radial-gradient(circle at 60% 60%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  70% {
+    border-image: radial-gradient(circle at 70% 70%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  80% {
+    border-image: radial-gradient(circle at 80% 80%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+  90% {
+    border-image: radial-gradient(circle at 90% 90%, #701cf5, #c241bc, #eb404f) 8 stretch;
+  }
+}

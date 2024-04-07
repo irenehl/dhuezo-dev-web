@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "ignorePatterns": ["*.cjs", "*.config.js", "*.config.ts", "*.json"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+   "project": "./tsconfig.json"
+ },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": ["error",{
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "arrow-function"
+    }],
+    "import/prefer-default-export": "off"
+  }
+}
