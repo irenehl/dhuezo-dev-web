@@ -16,7 +16,7 @@ const Timeline: FC<TimelineProps> = ({
   company,
   description,
 }) => (
-  <ol className="relative ml-3 border-s border-gray-200 bg-black/70 dark:border-gray-700">
+  <ol className="relative ml-3 border-s border-gray-200 bg-black/90 dark:border-gray-700">
     <li className="mb-10 ms-6">
       <span className="absolute -start-3 flex size-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-secondary dark:ring-gray-900">
         <svg

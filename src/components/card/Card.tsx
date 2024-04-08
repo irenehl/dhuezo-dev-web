@@ -8,7 +8,7 @@ type CardProps = {
 
 const Card: FC<CardProps> = ({ role, description, technologies }) => {
   return (
-    <div className="gradient-border my-3 space-y-4 rounded-xl border bg-black/90 p-4 with-transition hover:scale-105">
+    <div className="gradient-border with-transition my-3 space-y-4 rounded-xl border bg-black/90 p-4 hover:scale-105">
       <h3 className="font-bold ">{role}</h3>
       <p className="text-sm text-gray-400">{description}</p>
       <div className="flex items-end justify-end gap-1 text-xs font-medium md:gap-2 md:text-sm">
